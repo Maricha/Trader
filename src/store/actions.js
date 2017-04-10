@@ -5,6 +5,7 @@ export const loadData = ({commit}) => {
         .then(response => response.json())
         .then(data => {
             if (data) {
+                console.log(data);
                 const stocks = data.stocks;
                 const funds = data.funds;
                 const stockPortfolio = data.stockPortfolio;
